@@ -13,7 +13,7 @@ int main(void)
         c = a / MIN;
         if (a > 60)
         {
-            d = a - MIN;
+            d = a - MIN*c;
         }
         else
         {
