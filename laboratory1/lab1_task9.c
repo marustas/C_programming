@@ -1,6 +1,5 @@
 
 #include <stdio.h>
-
 void Temperatures(double f);
 
 int main(void)
