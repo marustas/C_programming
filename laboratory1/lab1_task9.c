@@ -5,12 +5,12 @@ void Temperatures(double f);
 
 int main(void)
 {
-    double fahr;
+    double f;
     do
     {
-        Temperatures(fahr);
+        Temperatures(f);
         printf("Enter a temperature in degrees fahrenheit (q to quit): ");
-    } while (scanf("%lf", &fahr) == 1);
+    } while (scanf("%lf", &f) == 1);
     printf("bye\n");
 }
 
