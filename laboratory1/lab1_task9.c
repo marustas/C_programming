@@ -16,12 +16,12 @@ int main(void)
 
 void Temperatures(double f)
 {
+    const double CEL_TO_KEL_COUNT = 273.16;
     const double FAHR_TO_CEL_SCALE = 5.0 / 9.0;
-    const double FAHR_TO_CEL_OFFSET = -32.0;
-    const double CEL_TO_KEL_OFFSET = 273.16;
+    const double FAHR_TO_CEL_COUNT = -32.0;
 
-    double c = (f + FAHR_TO_CEL_OFFSET) * FAHR_TO_CEL_SCALE;
-    double k = c + CEL_TO_KEL_OFFSET;
+    double c = (f + FAHR_TO_CEL_COUNT) * FAHR_TO_CEL_SCALE;
+    double k = c + CEL_TO_KEL_COUNT;
 
     printf("%.2f degrees fahrenheit is %.2f degrees celsius or %.2f degrees kelvin.\n", f, c, k);
 }
