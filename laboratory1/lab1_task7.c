@@ -6,10 +6,7 @@ double cube(double b, double c, double d);
 
 int main(void)
 {
-  double a;
-  double x;
-  double y;
-  double z;
+  double a,x,y,z;
   printf("Enter your double variable: ");
   scanf("%lf", &a);
 
