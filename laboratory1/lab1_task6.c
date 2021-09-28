@@ -14,7 +14,6 @@ int main()
         sum += (count * count);
         count++;
     }
-
     printf("Sum of squares of money  %d\n", sum);
     return 0;
 }

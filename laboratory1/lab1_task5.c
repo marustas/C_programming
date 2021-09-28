@@ -11,6 +11,5 @@ int main(void)
     while (count++ < n)
         sum = sum + count;
     printf("sum = %d\n", sum);
-
     return 0;
 }
