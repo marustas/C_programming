@@ -11,11 +11,12 @@ int main(void)
   double a, d;
   do
   {
-    printf("Enter a height in centimeters: ");
+    printf("Enter a height in centimeters(<=0 to quit): ");
     scanf("%lf", &a);
     double b = a * INCH_SCALE_1 / INCH_SCALE_2;
     c = b / FEET_SCALE;
     double d = b - FEET_SCALE * c;
     printf("%.1lf cm is equal to %d feet and %.1lf inches\n", a, c, d);
   } while (a > 0);
+  printf("bye\n");
 }
