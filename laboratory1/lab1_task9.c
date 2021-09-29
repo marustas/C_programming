@@ -8,11 +8,12 @@ void Temperatures(double f);
 int main(void)
 {
     double f;
-    do
-    {
-        Temperatures(f);
-        printf("Enter a temperature in degrees fahrenheit (q to quit): ");
-    } while (scanf("%lf", &f) == 1);
+    printf("Enter a temperature in degrees fahrenheit (q to quit): ");
+   while (scanf("%lf", &f) == 1) 
+	{
+		Temperatures(f);
+		printf("Enter a temperature in degrees fahrenheit (q to quit): ");
+	};
     printf("bye\n");
 }
 
