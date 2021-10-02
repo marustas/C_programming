@@ -1,4 +1,5 @@
-/* Modify the program so that you can tell it interactively how far the calculation should proceed.
+/*
+Modify the program so that you can tell it interactively how far the calculation should proceed.
 That is, replace the 20 with a variable that is read in.
  */
 #include <stdio.h>
