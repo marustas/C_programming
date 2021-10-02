@@ -13,9 +13,17 @@ int main(void)
     scanf("%d", &inputDays);
     while (inputDays > 0)
     {
-        outputWeeks = inputDays % WEEK_SCALE;
-        outputDays = inputDays / WEEK_SCALE;
-        printf("%d days are %d weeks, %d days.\n", inputDays, outputDays, outputWeeks);
+        if (inputDays >= WEEK_SCALE)
+        {
+            outputWeeks = inputDays % WEEK_SCALE;
+            outputDays = inputDays / WEEK_SCALE;
+            printf("%d days are %d weeks, %d days.\n", inputDays, outputDays, outputWeeks);
+        }
+        else
+        {
+            outputDays = inputDays;
+            printf("%d days are 0 weeks and %d days.\n", inputDays, outputDays);
+        }
 
         printf("Enter a number of days (enter <=0 to quit): ");
         scanf("%d", &inputDays);
