@@ -1,6 +1,7 @@
-//Write a program that displays the results of applying the modulus operation.
-// The user should first enter an integer to be used as the second operand, which will then remain unchanged.
-// Then the user enters the numbers for which the modulus will be computed, terminating the process by entering 0 or less.
+/* Write a program that displays the results of applying the modulus operation.
+ The user should first enter an integer to be used as the second operand, which will then remain unchanged.
+ Then the user enters the numbers for which the modulus will be computed, terminating the process by entering 0 or less.
+ */
 #include <stdio.h>
 int main(void)
 {
