@@ -8,8 +8,8 @@ int main(void)
     printf("Enter your variable: ");
     scanf("%d", &a);
     b = a + NUMBERS_SCALE;
-    for (a; a <= b; ++a)
-    {
-        printf("%d\n", a);
+    while (a<=b){
+       printf("%d\n", a); 
+       ++a;
     }
 }
