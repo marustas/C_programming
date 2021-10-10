@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    /*float a, b, c;
+    float a, b, c;
     printf("Enter the number: ");
     scanf("%f", &a);
     printf("Enter the number: ");
@@ -21,9 +21,5 @@ int main(void)
         printf("Values are not unique\n");
 
     return 0;
-    */
-    int i,j;
-    for (int i=5,j=i-1; i>0,j>0; --i,j=i-1){
-        printf("%d",i);
-    }
+    
 }
