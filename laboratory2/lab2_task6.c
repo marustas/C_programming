@@ -3,16 +3,14 @@
 int main(void)
 {
     long upper_limit = -1, lower_limit = 0;
-    int reads;
-
-    printf("This program prints a table of integers with their "
-           "squares and cubes.\n");
-
+    int input;
+    long i_squared, i_cubed;
     do
     {
         printf("Enter lower and upper limits of the table: ");
-        reads = scanf("%ld%ld", &lower_limit, &upper_limit);
-        if (reads != 2)
+        input = scanf("%ld%ld", &lower_limit, &upper_limit);
+
+        if (input != 2)
         {
             while (getchar() != '\n');
         }
@@ -25,7 +23,9 @@ int main(void)
 
     for (long int i = lower_limit; i <= upper_limit; i++)
     {
-        printf(" %-14ld| %-14ld| %-14ld\n", i, i * i, i * i * i);
+        i_squared = i * i;
+        i_cubed = i * i * i;
+        printf(" %-14ld| %-14ld| %-14ld\n", i, i_squared, i_cubed);
     }
 
     printf("\n");
