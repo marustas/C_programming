@@ -4,7 +4,9 @@ int main(void)
 {
     char line[255];
     int a = 0;
+
     printf("Enter the line:\n");
+    
     while (scanf("%c", &line[a]), line[a] != '\n')
         ++a;
 

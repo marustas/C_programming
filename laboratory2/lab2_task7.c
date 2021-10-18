@@ -4,8 +4,10 @@
 int main(void)
 {
     int a;
+
     printf("Enter the maximum length of the word: ");
     scanf("%d", &a);
+
     char word[a];
 
     printf("Enter the word: ");
@@ -22,6 +24,8 @@ int main(void)
     {
         printf("The word is too long");
     }
+
     printf("\n");
+    
     return 0;
 }
