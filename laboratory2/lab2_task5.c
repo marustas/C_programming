@@ -22,9 +22,9 @@ int main(void)
         {
             printf("%c", b);
         }
-
-        for (; 'A' <= b; b--)
+        while ('A' <= b)
         {
+            b--;
             printf("%c", b);
         }
 
