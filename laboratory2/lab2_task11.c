@@ -12,7 +12,7 @@ int main(void)
 	}
 	for (i--; i >= 0; i--) 
 	{
-		printf("%d", int_array[i]);
+		printf("%d ", int_array[i]);
 	}
 	printf("\n");
 
