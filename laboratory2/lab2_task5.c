@@ -23,7 +23,7 @@ int main(void)
             printf("%c", b);
         }
 
-        for ('A' <= b; b--;)
+        for (; 'A' <= b; b--)
         {
             printf("%c", b);
         }

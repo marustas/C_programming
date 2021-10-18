@@ -4,6 +4,7 @@ int main(void)
 {
 	float a, b, c;
 	printf("Enter two floating-point numbers: ");
+	
 	while (scanf(" %f %f", &a, &b) == 2)
 	{
 		c = (a - b) / (a * b);
