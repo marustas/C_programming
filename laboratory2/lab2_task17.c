@@ -11,7 +11,7 @@ int main(void)
 	while (balance > 0)
 	{
 		balance -= EVERYDAY_SPEND;
-		balance *= 1.0f + EARN_PERCENT;
+		balance *= 1.0 + EARN_PERCENT;
 		years++;
 	}
 
