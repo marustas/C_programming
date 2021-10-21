@@ -1,3 +1,7 @@
+/*
+Write a program that reads in a line of input and then prints the line in reverse order. 
+You can store the input in an array of char; assume that the line is no longer than 255 characters. 
+*/
 #include <stdio.h>
 
 int main(void)

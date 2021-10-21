@@ -1,3 +1,11 @@
+/*
+Consider these two infinite series:
+
+1.0 + 1.0/2.0 + 1.0/3.0 + 1.0/4.0 + ...
+1.0 - 1.0/2.0 + 1.0/3.0 - 1.0/4.0 + ...
+
+Write a program that evaluates running totals of these two series up to some limit of number of terms. 
+*/
 #include <stdio.h>
 
 int main(void)

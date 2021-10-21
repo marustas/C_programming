@@ -1,3 +1,13 @@
+/*
+Use nested loops to produce the following pattern:
+
+A
+BC
+DEF
+GHIJ
+KLMNO
+PQRSTU
+*/
 #include <stdio.h>
 
 int main(void)

@@ -1,3 +1,12 @@
+/*
+Use nested loops to produce the following pattern:
+
+^
+^^
+^^^
+^^^^
+^^^^^
+*/
 #include <stdio.h>
 
 int main(void)

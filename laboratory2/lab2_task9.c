@@ -1,3 +1,6 @@
+/*
+Modify exercise 8 so that it uses a function to return the value of the calculation.
+*/
 #include <stdio.h>
 
 float calc(float x, float y);

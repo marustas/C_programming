@@ -1,3 +1,6 @@
+/*
+Write a program that reads eight integers into an array and then prints them in reverse order.
+*/
 #include <stdio.h>
 
 int main(void)

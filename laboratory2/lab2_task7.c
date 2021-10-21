@@ -1,3 +1,7 @@
+/*
+Write a program that reads a single word into a character array and then prints the word backward.
+ Hint: Use strlen() to compute the index of the last character in the array.
+*/
 #include <stdio.h>
 #include <string.h>
 

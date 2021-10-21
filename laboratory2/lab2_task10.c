@@ -1,3 +1,7 @@
+/*
+Write a program that requests lower and upper integer limits, calculates the sum of all the integer squares from the square of the lower limit to the square of the upper limit, and displays the answer. 
+The program should then continue to prompt for limits and display answers until the user enters an upper limit that is equal to or less than the lower limit
+*/
 #include <stdio.h>
 
 int squares_sum(int lower_limit, int upper_limit);
