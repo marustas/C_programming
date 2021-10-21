@@ -146,7 +146,6 @@ prints a listing of all parts in the database
 shows the part number , part name and the quantity
 parts are printed in order in which they were entered on database
 */
-
 void print(void)
 {
     printf("Part Number  Part Name             Quantity on Hand");
