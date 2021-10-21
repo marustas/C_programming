@@ -1,43 +1,30 @@
 #include <stdio.h>
 
-void print_spaces(unsigned int n);
-
 int main(void)
 {
 	char uppercase_letter;
-	char a, b;
+	char row;
+	char spaces;
+	char letter;
 
-	do
+	printf("Please, insert an uppercase letter: ");
+	scanf("%c", &uppercase_letter);
+
+	for (row = 'A'; row <= uppercase_letter; row++)
 	{
-		printf("Enter an uppercase letter: ");
-		scanf(" %c", &uppercase_letter);
-	} while (uppercase_letter < 'A' || 'Z' < uppercase_letter);
-
-	for(a = 'A'; a <= uppercase_letter; a++)
-	{
-		print_spaces(uppercase_letter - a);
-
-		for (b = 'A'; b < a; b++)
+		for (spaces = uppercase_letter; spaces > row; spaces--)
 		{
-			printf("%c", b);
+			printf(" ");
 		}
-
-		for (; 'A' <= b; b--)
+		for (letter = 'A'; letter < row; letter++)
 		{
-			printf("%c", b);
+			printf("%c", letter);
 		}
-
-		print_spaces(uppercase_letter - a);
+		for (; letter >= 'A'; letter--)
+		{
+			printf("%c", letter);
+		}
 		printf("\n");
 	}
-
 	return 0;
-}
-
-void print_spaces(unsigned int n)
-{
-	for (int i = 0; i < n; i++)
-	{
-		printf(" ");
-	}
 }
