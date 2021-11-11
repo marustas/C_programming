@@ -78,7 +78,7 @@ void insert(void)
         printf("database is full, can't add anymore parts.\n");
         return;
     }
-    prinf("Enter the part number: ");
+    printf("Enter the part number: ");
     scanf("%d", &part_number);
     if (find_part(part_number) >= 0)
     {
@@ -88,7 +88,7 @@ void insert(void)
     inventory[num_parts].number = part_number;
     printf("Enter the part name: ");
     read_line(inventory[num_parts].name, NAME_LENGTH);
-    printf("Enter the quantitu on hand: ");
+    printf("Enter the quantity on hand: ");
     scanf("%d", &inventory[num_parts].on_hand);
 
     ++num_parts;
@@ -102,12 +102,12 @@ if the part exists prints the name and quantity
 void search(void)
 {
     int number;
-    printf("enter the part number: ");
+    printf("Enter the part number: ");
     scanf("%d", &number);
     int i = find_part(number);
     if (i >= 0)
     {
-        printf("Part name is $s\n", inventory[i].name);
+        printf("Part name is %s\n", inventory[i].name);
         printf("Quantity on hand is %d\n", inventory[i].on_hand);
     }
     else
@@ -124,12 +124,12 @@ otherwise prints the error message
 void update(void)
 {
     int number;
-    printf("enter the part number: ");
+    printf("Enter the part number: ");
     scanf("%d", &number);
     int i = find_part(number);
     if (i >= 0)
     {
-        prinf("Enter the chanhe in quantity: ");
+        printf("Enter the chanhe in quantity: ");
         int change;
         scanf("%d", &change);
         inventory[i].on_hand += change;
