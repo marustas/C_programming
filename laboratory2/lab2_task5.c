@@ -2,7 +2,7 @@
 Have a program request the user to enter an uppercase letter.
 Use nested loops to produce a pyramid pattern like this:
 
-     A
+    A
    ABA
   ABCBA
  ABCDCBA
