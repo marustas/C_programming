@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<ctype.h>
 
 void print_function(char ch, int numberOfChars, int numberOfLines);
 
@@ -10,12 +11,20 @@ int main(void)
 
     while (scanf("%c,%d,%d", &ch, &number_of_characters, &number_of_lines) == 3)
     {
-        print_function(ch, number_of_characters, number_of_lines);
-        
-        while (getchar() != '\n')
-            continue;
+        if (isalpha(ch))
+        {
+            print_function(ch, number_of_characters, number_of_lines);
 
-        printf("Please enter a character, number of characters in a line, and number of lines:\n");
+            while (getchar() != '\n')
+                continue;
+
+            printf("Please enter a character, number of characters in a line, and number of lines:\n");
+        }
+        else
+        {
+            printf("The input value is not a character, please try again.\n");
+            break;
+        }
     }
 
     return 0;
