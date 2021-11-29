@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void max_replace_func(double *x, double *y);
+void larger_of_values(double *x, double *y);
 
 int main(void)
 {
@@ -12,7 +12,7 @@ int main(void)
         printf("The values before the operation:\n");
         printf("x = %f, y = %f\n", x, y);
 
-        max_replace_func(&x, &y);
+        larger_of_values(&x, &y);
 
         printf("After the operation and replacement:\n");
         printf("x = %f, y = %f\n", x, y);
@@ -24,7 +24,7 @@ int main(void)
     return 0;
 }
 
-void max_replace_func(double *x, double *y)
+void larger_of_values(double *x, double *y)
 {
     if (*x > *y)
         *y = *x;
