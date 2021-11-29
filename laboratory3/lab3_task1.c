@@ -7,7 +7,7 @@ int main(void)
     double x, y;
 
     printf("Please enter the variables:\n");
-    while (scanf("%lf %lf", &x, &y) == 2)
+    while (scanf("%lf,%lf", &x, &y) == 2)
     {
         if (x != y)
         {
