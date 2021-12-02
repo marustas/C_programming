@@ -6,22 +6,30 @@ int main(void)
 {
 	double x, y, z;
 
-	printf("Enter three numbers x, y and z:\n");
-	while(scanf("%lf,%lf,%lf", &x, &y, &z) == 3)
+	printf("Enter three double variables(x, y and z):\n");
+	while (scanf("%lf,%lf,%lf", &x, &y, &z) == 3)
 	{
-		putchar('\n');
-		printf("Before calling sort_variables:\n");
-		printf("x = %f, y = %f, z = %f\n", x, y, z);
+		if (x != y && y != z && x != z)
+		{
+			putchar('\n');
+			printf("The positions of the variables before operation:\n");
+			printf("x = %f, y = %f, z = %f\n", x, y, z);
 
-		sort_variables(&x, &y, &z);
+			sort_variables(&x, &y, &z);
 
-		putchar('\n');
-		printf("After calling sort_variables:\n");
-		printf("x = %f, y = %f, z = %f\n", x, y, z);
+			putchar('\n');
+			printf("The positions of the variables after the operation:\n");
+			printf("x = %f, y = %f, z = %f\n", x, y, z);
 
-		putchar('\n');
+			putchar('\n');
 
-		printf("Enter three numbers x, y and z:\n");
+			printf("Enter three double variables(x, y and z):\n");
+		}
+		else
+		{
+			printf("Some of the variables are equal, please try again.\n");
+			printf("Enter three double variables(x, y and z):\n");
+		}
 	}
 
 	return 0;
