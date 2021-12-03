@@ -11,22 +11,13 @@ int main(void)
 
     while (scanf("%c,%d,%d", &ch, &number_of_characters, &number_of_lines) == 3)
     {
-        if (isalpha(ch))
-        {
             print_function(ch, number_of_characters, number_of_lines);
 
             while (getchar() != '\n')
                 continue;
 
             printf("Please enter a character, number of characters in a line, and number of lines:\n");
-        }
-        else
-        {
-            printf("The input value is not a character, please try again.\n");
-            break;
-        }
     }
-
     return 0;
 }
 
