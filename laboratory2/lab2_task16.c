@@ -26,7 +26,7 @@ int main(void)
         daphne_balance += DAPHNE_INVESTMENT * DAPHNE_INTEREST;
         years++;
     }
-    printf("The value of Deirdre’s investment will exceed the value of Daphne’s investment in %d years.\nDaphne's investment is worth $%.2f and Deirdre’s investment is worth $%.2f.\n", years, daphne_balance, deirdre_balance);
+    printf("The value of Deirdre's investment will exceed the value of Daphne's investment in %d years.\nDaphne's investment is worth $%.2f and Deirdre's investment is worth $%.2f.\n", years, daphne_balance, deirdre_balance);
 
     return 0;
 }
