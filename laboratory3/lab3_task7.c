@@ -1,30 +1,27 @@
 #include <stdio.h>
-#include <ctype.h>
-
-int letter_location(char ch);
-
 int main(void)
 {
 	char ch;
-	int location;
-
-	while ((ch = getchar()) != EOF)
+	int order;
+	char *info;
+	printf("Enter the characters:\n");
+	while ((ch = getchar()) != '\n')
 	{
-		if ((location = letter_location(ch)) == -1)
-			printf("%c is not a letter\n", ch);
+		printf("%c", ch);
+
+		if (ch >= 'a' && ch <= 'z')
+			ch = (ch - 'a' + 'A');
+			
+		if (ch >= 'A' && ch <= 'Z')
+			order = ch - 'A' + 1;
 		else
-			printf("%c is a letter: location = %d\n", ch, location);
-	} 
-	return 0;
-}
+			order = -1;
 
-int letter_location(char ch)
-{
-	if (isalpha(ch))
-	{
-		ch = tolower(ch);
-		return (ch - 'a' + 1);
+		if (order != -1)
+			info = "is a letter";
+		else
+			info = "is not a letter";
+
+		printf(" %16s: %4d \n", info, order);
 	}
-	else
-		return -1;
 }
