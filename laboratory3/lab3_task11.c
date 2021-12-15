@@ -3,14 +3,14 @@
 long Fibonacci_func(long n);
 
 int main(void) {
-	long x;
+	long a;
 
 	printf("Test Fibonacci() function\n");
 	printf("Enter an integer: ");
 
-	while (scanf("%ld", &x) == 1)
+	while (scanf("%ld", &a) == 1)
 	{
-		printf("Fibonacci #%ld = %ld\n", x, Fibonacci_func(x));
+		printf("Fibonacci #%ld = %ld\n", a, Fibonacci_func(a));
 
 		printf("Enter an integer: ");
 	}
