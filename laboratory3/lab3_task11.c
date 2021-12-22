@@ -1,8 +1,9 @@
-#include <stdio.h>	
+#include <stdio.h>
 
 long Fibonacci_func(long n);
 
-int main(void) {
+int main(void)
+{
 	long a;
 
 	printf("Test Fibonacci() function\n");
@@ -28,8 +29,14 @@ long Fibonacci_func(long n)
 
 	long fib_num1 = 0, fib_num = 1, fib_num2;
 
-	if (n == 1) return 0;
-	if (n == 2) return 1;
+	if (n == 1)
+	{
+		return 0;
+	}
+	if (n == 2)
+	{
+		return 1;
+	}
 
 	for (long i = 3; i <= n; i++)
 	{
