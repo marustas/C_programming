@@ -12,9 +12,9 @@ FEDCBA
 
 int main(void)
 {
-	for (int a = 1; a < 7; a++)
+	for (int a = 1; a <7; a++)
 	{
-		for (int b = 'F'; 'F'-b <= a; b--)
+		for (int b = 'F'; 'F'-b <a; b--)
 		{
 			printf("%c",b);
 		}
