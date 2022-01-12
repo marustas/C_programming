@@ -8,18 +8,20 @@ FEDC
 FEDCB
 FEDCBA
 */
-#include<stdio.h>
+#include <stdio.h>
 
 int main(void)
 {
-	for (int a = 1; a <7; a++)
+	char ch;
+	printf("Enter the uppercase letter:");
+	scanf("%c", &ch);
+	for (int i = ch; i >= 'A'; i--)
 	{
-		for (int b = 'F'; 'F'-b <a; b--)
+		for (char j = ch; j >= i; j--)
 		{
-			printf("%c",b);
+			printf("%c", j);
 		}
+
 		printf("\n");
 	}
-
-	return 0;
 }
