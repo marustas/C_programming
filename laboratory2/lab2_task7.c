@@ -19,7 +19,7 @@ int main(void)
 
     if (strlen(word) <= a)
     {
-        for (int i = strlen(word) - 1; i >= 0; i--)
+        for (int i = strlen(word); i >= 0; i--)
         {
             printf("%c", word[i]);
         }
