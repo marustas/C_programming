@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-double min(double, double);
+void min(double x, double y);
 
 int main(void)
 {
@@ -11,7 +11,7 @@ int main(void)
     {
         if (x != y)
         {
-            printf("The minimum of %lf and %lf is %lf.\n", x, y, min(x, y));
+            min(x,y);
             printf("Please enter the variables:\n");
         }
         else
@@ -25,7 +25,10 @@ int main(void)
     return 0;
 }
 
-double min(double x, double y)
+void min(double x, double y)
 {
-    return x < y ? x : y;
+  if (x > y)
+        printf("The variable %lf is the smallest\n",y);
+    else
+        printf("The variable %lf is the smallest\n",x);
 }
