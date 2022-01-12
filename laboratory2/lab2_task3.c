@@ -20,8 +20,7 @@ int main(void)
 		for (char j = ch; j >= i; j--)
 		{
 			printf("%c", j);
-		}
-
+		}				
 		printf("\n");
 	}
 }
