@@ -8,7 +8,7 @@ int main(void)
     scanf("%c", &ch);
     printf("Enter the number of rows you want to have: ");
     scanf("%d", &rows);
-    for (int i = 0; i <= rows; i++)
+    for (int i = 0; i < rows; i++)
     {
           for (int spaces = i; spaces < rows; spaces++)
         {
