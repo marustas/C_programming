@@ -13,29 +13,28 @@ For example, the preceding pattern would result from an input value of E.
 */
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
+    char ch, asc, desc;
+    int rows, spaces;
+    printf("Enter the letter: ");
+    scanf("%c", &ch);
+    for (rows = 'A'; rows <= ch; rows++)
+    {
+        for (spaces = ch; spaces > rows; spaces--)
+        {
+            printf(" ");
+        }
+        for (asc = 'A'; asc < rows; asc++)
+        {
+            printf("%c", asc);
+        }
+        for (desc = asc; desc >= 'A'; desc--)
+        {
+            printf("%c", desc);
+        }
+        printf("\n");
+    }
 
- int rows;
- int spaces;
-
- char asc;
- char desc;
- char input;
-
- printf("Please enter an uppercase letter: ");
- scanf("%c", &input);
-
- for (rows = 'A'; rows <= input; rows++) {
-  for (spaces = input; spaces > rows; spaces--) {
-   printf(" ");
-  }
-  for (asc = 'A'; asc <=rows; asc++) {
-   printf("%c", asc);
-  }
-  for (desc = asc - 2; desc >='A'; desc--) {
-   printf("%c", desc);
-  }
-  printf("\n");
- }
- return 0;
+    return 0;
 }
