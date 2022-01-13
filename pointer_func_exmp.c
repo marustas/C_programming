@@ -23,8 +23,6 @@ int main(void)
 
 int squares_sum(int *lower_limit, int *upper_limit)
 {
-    int lower_limit_squared = *lower_limit * *lower_limit;
-    int upper_limit_squared = *upper_limit * *upper_limit;
     int sum = 0;
 
     for (int i = *lower_limit; i <= *upper_limit; i++)
